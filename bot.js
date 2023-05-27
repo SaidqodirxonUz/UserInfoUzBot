@@ -17,7 +17,7 @@ bot.on("message", (msg) => {
   }
 
   if (text === "/info") {
-    const sendText = `<b>Hurmatli ${msg.chat.first_name}!</b>\n\n<b>Sizning Username:</b> ${msg.from.username}\n<b>Sizning ID raqamingiz:</b> <code>${msg.from.id}</code>`;
+    const sendText = `<b>Hurmatli ${msg.chat.first_name}!</b>\n\n<b>Sizning Username:</b> <code>${msg.from.username}</code>\n\n<b>Sizning ID raqamingiz:</b> <code>${msg.from.id}</code>`;
 
     bot.sendMessage(chatId, sendText, { parse_mode: "HTML" });
 
